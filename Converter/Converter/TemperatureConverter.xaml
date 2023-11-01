@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Converter.TemperatureConverter">
+    <StackLayout>
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="entry" WidthRequest="85" Keyboard="Numeric"></Entry>
+
+                <Picker x:Name="first" WidthRequest="140" Title="Choose one..." FontSize="24">
+                    <Picker.Items>
+                        <x:String>Celsius</x:String>
+                        <x:String>Kelvin</x:String>
+                        <x:String>Fahrenheit</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Convert" Clicked="Button_Click">
+                </Button >
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" >
+                <Entry x:Name="entry2" WidthRequest="85" Keyboard="Numeric" IsReadOnly="True"></Entry>
+
+                <Picker x:Name="second" WidthRequest="140" Title="Choose one..." FontSize="24">
+                    <Picker.Items>
+                        <x:String>Celsius</x:String>
+                        <x:String>Kelvin</x:String>
+                        <x:String>Fahrenheit</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" >
+                <Button Text=" => &lt;= " Clicked="Button_Click_Reverse" WidthRequest="75" HeightRequest="75" FontSize="20">
+                </Button >
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

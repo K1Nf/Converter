@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Converter.MainPage">
+
+    <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
+        
+        <StackLayout Orientation="Horizontal" Margin="0,0,30,0">
+            <Image WidthRequest="100" HeightRequest="100" Grid.Row="0" Grid.Column="0" Source="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/52664/straight-ruler-emoji-clipart-md.png" ></Image>
+            <Button ClassId="Long" Clicked="Button_Clicked" WidthRequest="250" HeightRequest="100" BackgroundColor="Gray" Text="Конвертер единиц длины" TextColor="White">
+
+            </Button >
+        </StackLayout>
+
+        
+        <StackLayout Orientation="Horizontal">
+        <Image WidthRequest="100" HeightRequest="100" Grid.Row="1" Grid.Column="0" Source="https://pngset.com/images/balance-emoji-scale-lamp-chandelier-jury-transparent-png-103431.png"></Image>
+            <Button ClassId="Weight" Clicked="Button_Clicked" WidthRequest="250" HeightRequest="100" BackgroundColor="Gray" Text="Конвертер единиц массы" TextColor="White">
+
+            </Button>
+        </StackLayout>
+
+        
+        <StackLayout Orientation="Horizontal">
+        <Image WidthRequest="100" HeightRequest="100" Grid.Row="2" Grid.Column="0" Source="https://static.tildacdn.com/tild3263-3632-4635-b866-636462386430/thermometer_1f321-re.png"></Image>
+            <Button ClassId="Temperature" Clicked="Button_Clicked" WidthRequest="250" HeightRequest="100" BackgroundColor="Gray" Text="Конвертер единиц температуры" TextColor="White">
+
+            </Button>
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal">
+        <Image WidthRequest="100" HeightRequest="100" Source="https://papik.pro/grafic/uploads/posts/2023-04/1682597619_papik-pro-p-smail-skorosti-png-4.png"></Image>
+            <Button ClassId="Speed" Clicked="Button_Clicked"  WidthRequest="250" HeightRequest="100" BackgroundColor="Gray" Text="Конвертер единиц скорости" TextColor="White">
+
+            </Button>
+        </StackLayout>
+
+        
+        <StackLayout Orientation="Horizontal">
+            <Image WidthRequest="100" HeightRequest="100" Source="https://e7.pngegg.com/pngimages/658/1/png-clipart-flex-muscle-flexing-muscles-emoji-icons-logos-emojis-emojis.png"></Image>
+            <Button ClassId="Power" Clicked="Button_Clicked"  WidthRequest="250" HeightRequest="100" BackgroundColor="Gray" Text="Конвертер единиц мощности" TextColor="White">
+
+            </Button>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
